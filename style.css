@@ -1,4 +1,4 @@
-body {
+body{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -12,13 +12,12 @@ color: #000000c9;
 line-height: 1.6;
 }
 
-/*Cabecalho*/
-
 header {
 background-color:#e99c37ce;
 color:rgb(248, 246, 246);
 padding: 20px;
 text-align: center;
+box-shadow:0 3px 10px #180606;
 }
 
 header h1 {
@@ -36,12 +35,12 @@ gap: 10px;
 nav a {
 color: white;
 text-decoration: none;
-padding: 8px 12px;
-border-radius: 5px;
+margin: 0 10px;
+font-size: 15px;
 }
 
 nav a:hover {
-background-color: #28617d;
+background-color: #bd8928;
 }
 
 
@@ -56,7 +55,7 @@ padding: 40px 20px;
 
 background-size: cover;
 background-position: center;
-color: rgb(32, 33, 126);
+color: rgba(221, 143, 40, 0.945);
 
 }
 
@@ -70,8 +69,9 @@ font-size: 18px;
 margin-bottom: 25px;
 }
 .imagem img {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
+border-radius: 15px;
 }
 .botao {
 display: inline-block;
@@ -87,7 +87,6 @@ font-weight: bold;
 background-color: #d6ad45;
 }
 
-/* CONTEÚDO */
 
 .conteudo {
 max-width: 900px;
@@ -114,7 +113,6 @@ padding: 20px;
 margin-bottom: 20px;
 }
 
-/* CAIXA DE INFORMAÇÕES */
 
 .caixa,
 .pogue-box {
@@ -130,42 +128,10 @@ box-shadow: 0 2px 8px rgb(177, 76, 8);
 margin-bottom: 15px;
 }
 
-img {
-    width: 350px;
-    height: auto;
-}
 
-.pogue-box ul {
-padding-left: 25px;
-}
 
-/* CARDS */
 
-.cards {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-}
-
-.card1{
-background-color: white;
-padding: 25px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
-
-.card h3 {
-color: #1d1379;
-margin-bottom: 10px;
-}
-.card p {
-    margin-left: 170px;
-    margin-top: px;
-}
-
-/* TEMPORADAS */
-
-.temporadas {
+.temporadas{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 20px;
@@ -178,12 +144,43 @@ border-radius: 8px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 }
 
-.temporada h3 {
-margin-bottom: 10px;
-color: #17617c;
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
 }
 
-/* CURIOSIDADES */
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+text-align: center;
+}
+
+.card img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+margin: 0;
+border-radius: 10px;
+}
+
+.card h3 {
+color: #dd7c21;
+margin: 15px 0 10px;
+}
+
+.card p {
+margin: 0;
+}
+
+
+.temporada h3 {
+margin-bottom: 10px;
+color: #ca7524;
+}
+
 
 .curiosidades {
 display: grid;
@@ -200,10 +197,9 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 
 .curiosidade h3 {
 margin-bottom: 10px;
-color: #17617c;
+color: #bb711c;
 }
 
-/* RODAPÉ */
 
 footer {
 background-color: #e99c37ce;
