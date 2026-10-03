@@ -320,4 +320,8 @@ margin: 20px auto;
         text-align: center;
         font-size: 14px;
     }
+/* ERRO TEMPORÁRIO — BOTÕES MUITO PEQUENOS */
+.botao {
+    font-size: 8px !important;
+    padding: 3px 5px !important;
 }
