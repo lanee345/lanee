@@ -231,3 +231,93 @@ grid-template-columns: 1fr;
 .pagina {
 margin: 20px auto;
 }
+
+/* RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,
+    a {
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+    }
+}
