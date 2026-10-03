@@ -1,322 +1,373 @@
-body {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-font-family: Arial, sans-serif;
-background-color: #f4f1e8;
-color: #000000c9;
-line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #000000c9;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
-background-color:#e99c37ce;
-color:rgb(248, 246, 246);
-padding: 20px;
-text-align: center;
-box-shadow:0 3px 10px #180606;
+    background-color: #e99c37;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(24, 6, 6, 0.5);
 }
 
 header h1 {
-margin-bottom: 15px;
-letter-spacing: 3px;
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
 }
 
 nav {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-margin: 0 10px;
-font-size: 15px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-background-color: #bd8928;
+    background-color: #bd8928;
 }
 
-
-/*Pagina inicial*/
 .hero {
-min-height: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 40px 20px;
-
-background-size: cover;
-background-position: center;
-color: rgba(221, 143, 40, 0.945);
-
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #dd8f28;
 }
 
 .hero h2 {
-font-size: 40px;
-margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-font-size: 18px;
-margin-bottom: 25px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .imagem img {
-display: flex;
-justify-content: center;
-border-radius: 15px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
+
 .botao {
-display: inline-block;
-background-color:#e7c46a;
-color: #c07927;
-text-decoration: none;
-padding: 12px 20px;
-border-radius: 6px;
-font-weight: bold;
+    display: inline-block;
+    background-color: #e7c46a;
+    color: #c07927;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-background-color: #d6ad45;
+    background-color: #d6ad45;
 }
 
-
 .conteudo {
-max-width: 900px;
-margin: 40px auto;
-padding: 20px;
-text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .conteudo h2,
 .pagina h2 {
-color: #180606;
-margin-bottom: 20px;
+    color: #180606;
+    margin-bottom: 20px;
 }
 
-/* PÁGINAS */
-
 .pagina {
-max-width: 1000px;
-margin: 40px auto;
-padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .pagina > p {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-
 
 .caixa,
 .pogue-box {
-background-color: white;
-padding: 25px;
-margin-top: 25px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgb(177, 76, 8);
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(177, 76, 8, 0.5);
 }
 
 .caixa h3,
 .pogue-box h3 {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-
-
-
-.temporadas{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
+.temporadas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .temporada {
-background-color: white;
-padding: 25px;
-border-radius: 8px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.temporada h3 {
+    margin-bottom: 10px;
+    color: #ca7524;
 }
 
 .cards {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .card {
-background-color: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    overflow: hidden;
 }
 
 .card img {
-width: 100%;
-height: 280px;
-object-fit: cover;
-margin: 0;
-border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .card h3 {
-color: #dd7c21;
-margin: 15px 0 10px;
+    color: #dd7c21;
+    margin: 15px 0 10px;
 }
 
 .card p {
-margin: 0;
+    margin: 0;
 }
-
-
-.temporada h3 {
-margin-bottom: 10px;
-color: #ca7524;
-}
-
 
 .curiosidades {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .curiosidade {
-background-color: white;
-padding: 25px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .curiosidade h3 {
-margin-bottom: 10px;
-color: #bb711c;
+    margin-bottom: 10px;
+    color: #bb711c;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 footer {
-background-color: #e99c37ce;
-color: white;
-text-align: center;
-padding: 20px;
-margin-top: 50px;
+    background-color: #e99c37;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-
-header h1 {
-font-size: 25px;
-}
-nav {
-flex-direction: column;
-align-items: center;
-}
-nav a {
-width: 100%;
-}
-.hero h2 {
-font-size: 30px;
-}
-.cards,
-.temporadas,
-.curiosidades {
-grid-template-columns: 1fr;
-}
-.pagina {
-margin: 20px auto;
-}
-
-/* RESPONSIVIDADE */
-
-/* Tablets */
 @media (max-width: 900px) {
-
-    .container {
-        width: 90%;
+    header h1 {
+        font-size: 28px;
     }
 
-    nav ul {
-        gap: 15px;
+    .hero {
+        min-height: 250px;
+        padding: 50px 20px;
     }
 
-    h1 {
-        font-size: 38px;
+    .hero h2 {
+        font-size: 34px;
     }
 
-    h2 {
-        font-size: 30px;
+    .hero p {
+        font-size: 17px;
     }
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .temporadas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .curiosidades {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Celulares */
 @media (max-width: 600px) {
-
     body {
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: 92%;
+        font-size: 15px;
     }
 
     header {
-        padding: 15px 0;
+        padding: 15px 10px;
     }
 
-    nav ul {
+    header h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    nav {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        width: 100%;
+        gap: 5px;
     }
 
-    h1 {
-        font-size: 30px;
+    nav a {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+        padding: 10px;
     }
 
-    h2 {
+    .hero {
+        min-height: 220px;
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .conteudo,
+    .pagina {
+        width: 92%;
+        margin: 25px auto;
+        padding: 10px;
+    }
+
+    .conteudo h2,
+    .pagina h2 {
         font-size: 25px;
     }
 
-    p {
-        font-size: 15px;
-        line-height: 1.6;
+    .caixa,
+    .pogue-box,
+    .temporada,
+    .curiosidade {
+        padding: 20px;
     }
 
-    .cards {
+    .cards,
+    .temporadas,
+    .curiosidades {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .card {
         width: 100%;
     }
 
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+    .card img {
+        height: 250px;
     }
 
-    button,
-    a {
+    .botao {
+        padding: 10px 16px;
         max-width: 100%;
     }
 
     footer {
-        text-align: center;
+        margin-top: 30px;
+        padding: 15px 10px;
         font-size: 14px;
     }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .conteudo h2,
+    .pagina h2 {
+        font-size: 22px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .caixa,
+    .pogue-box,
+    .temporada,
+    .curiosidade {
+        padding: 15px;
+    }
+}
