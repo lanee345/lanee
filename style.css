@@ -202,6 +202,25 @@ padding: 20px;
 margin-top: 50px;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
 
 header h1 {
 font-size: 25px;
