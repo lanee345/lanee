@@ -101,7 +101,11 @@ margin-bottom: 20px;
 
 
 .pagina {
-max-width: 1000px;
+width: 100%;
+height: 250px;
+object-fit: contain;
+border-radius: 10px;
+backgroud-color: white;
 margin: 40px auto;
 padding: 20px;
 }
