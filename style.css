@@ -1,4 +1,4 @@
-/* CONFIGURAÇÕES GERAIS */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@ main {
 /* CABEÇALHO */
 header {
     background-color: #e99c37ce;
-    color: rgb(248, 246, 246);
+    color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 3px 10px #180606;
@@ -51,15 +51,17 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-size: 15px;
+    padding: 5px 10px;
 }
 
 nav a:hover {
     background-color: #bd8928;
+    border-radius: 5px;
 }
 
 /* DESTAQUE */
 .hero {
-    min-height: 40px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,10 +85,12 @@ nav a:hover {
 /* IMAGENS */
 .imagem img {
     display: block;
-    max-width: 500%;
+    width: 100%;
+    max-width: 500px;
     height: auto;
+    object-fit: contain;
     border-radius: 15px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /* BOTÕES */
@@ -165,11 +169,12 @@ nav a:hover {
     color: #ca7524;
 }
 
-/* CARDS */
+/* CARDS E PERSONAGENS */
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    align-items: stretch;
 }
 
 .card {
@@ -181,10 +186,12 @@ nav a:hover {
 }
 
 .card img {
-    width: 10%;
+    display: block;
+    width: 100%;
     height: 280px;
-    object-fit: cover;
-    margin: 0;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
@@ -255,5 +262,4 @@ footer {
         margin: 20px auto;
         padding: 15px;
     }
-
 }
