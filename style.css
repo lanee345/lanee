@@ -12,6 +12,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f1e8;
     color: #000000c9;
+    text-align: center;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
