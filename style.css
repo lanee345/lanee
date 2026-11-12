@@ -264,3 +264,56 @@ footer {
         padding: 15px;
     }
 }
+
+
+/* PÁGINA INICIAL */
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main > h2 {
+    font-size: 32px;
+    color: #bd7625;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main > p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+main > .botao {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 13px 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+main > .botao:hover {
+    background-color: #d6ad45;
+    transform: scale(1.05);
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+    main {
+        padding: 35px 15px;
+    }
+
+    main > h2 {
+        font-size: 25px;
+    }
+
+    main > p {
+        font-size: 15px;
+    }
+}
+
