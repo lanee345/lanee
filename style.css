@@ -24,7 +24,6 @@ main {
     flex: 1;
 }
 
-/* CABEÇALHO */
 header {
     background-color: #e99c37ce;
     color: white;
@@ -39,7 +38,6 @@ header h1 {
     letter-spacing: 3px;
 }
 
-/* MENU */
 nav {
     display: flex;
     justify-content: center;
@@ -60,7 +58,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* DESTAQUE */
 .hero {
     min-height: 200px;
     display: flex;
@@ -83,7 +80,6 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-/* IMAGENS */
 .imagem img {
     display: block;
     width: 100%;
@@ -94,7 +90,6 @@ nav a:hover {
     margin: 20px auto;
 }
 
-/* BOTÕES */
 .botao {
     display: inline-block;
     background-color: #e7c46a;
@@ -109,7 +104,6 @@ nav a:hover {
     background-color: #d6ad45;
 }
 
-/* CONTEÚDO */
 .conteudo {
     max-width: 900px;
     margin: 40px auto;
@@ -136,7 +130,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* CAIXAS */
 .caixa,
 .pogue-box {
     background-color: white;
@@ -151,7 +144,6 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* TEMPORADAS */
 .temporadas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -170,7 +162,6 @@ nav a:hover {
     color: #ca7524;
 }
 
-/* CARDS E PERSONAGENS */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -205,7 +196,6 @@ nav a:hover {
     margin: 0;
 }
 
-/* CURIOSIDADES */
 .curiosidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -224,7 +214,6 @@ nav a:hover {
     color: #bb711c;
 }
 
-/* RODAPÉ */
 footer {
     background-color: #e99c37ce;
     color: white;
@@ -268,7 +257,6 @@ footer {
     border-radius: 5px;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
 
     header h1 {
@@ -299,9 +287,6 @@ footer {
         padding: 15px;
     }
 }
-
-
-/* PÁGINA INICIAL */
 
 main {
     flex: 1;
@@ -337,7 +322,6 @@ main > .botao:hover {
     transform: scale(1.05);
 }
 
-/* CELULAR */
 @media (max-width: 768px) {
     main {
         padding: 35px 15px;
