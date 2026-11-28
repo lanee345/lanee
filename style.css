@@ -237,21 +237,31 @@ footer {
     background-image: url("imagens/praia.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 500px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    
     color: white;
 }
 
 .conteudo-banner {
-    background-color: rgba(0,0,0,0.4);
     padding: 30px;
 }
 
+.banner h2{
+    font-size: 18px;
+}  
+
+.banner p{
+     font-size: 18px;
+ }
+
 .botao {
-    background: orange;
+    background-color: orange;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
